@@ -1,0 +1,150 @@
+#root {
+  /* max-width: 1440px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  --color-primary: #0066ff;
+  --color-light-primary: #84b5ff;
+  --color-dark-primary: #0147ae;
+  --color-white: #ffffff;
+  --color-black: #1c1b1f;
+  --color-gray: #a3a6aa;
+  --color-light-gradient: linear-gradient(
+    to top,
+    rgba(0, 102, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  --color-dark-gradient: linear-gradient(to top, #020d1f, #0066ff);
+
+  --elevation-drop-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.body1 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.body2 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.label1 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.label2 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: var(--color-dark-primary);
+  border-radius: 4px;
+  gap: 8px;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-white);
+
+  border: none;
+  width: fit-content;
+}
+
+@media (min-width: 764px) {
+  h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  h2 {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .body1 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .body2 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .label1 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .label2 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

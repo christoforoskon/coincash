@@ -1,0 +1,59 @@
+/* embla.css */
+
+.embla {
+  padding: 1rem;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%; /* Each slide takes full width */
+  margin-right: 1rem; /* Add some margin between slides */
+}
+
+.embla__slide__img {
+  width: 100%; /* Ensure images take full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.embla__slide__number {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: #fff; /* White text color */
+  padding: 0.5rem;
+  border-radius: 50%; /* Circular shape */
+}
+
+.embla__progress {
+  z-index: 1;
+  background-color: #ccc; /* Change the background color to grey */
+  /* position: absolute; */
+  height: 0.5rem; /* Increase the height for better visibility */
+  border-radius: 0.25rem; /* Add some border radius for rounded corners */
+  left: 0; /* Align the progress bar to the left */
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.embla__progress__bar {
+  background-color: #000; /* Change the progress bar color to black */
+  height: 100%; /* Make the progress bar fill the entire height of its container */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0; /* Start with a width of 0 */
+  transition: width 0.3s ease-out; /* Add a transition for smooth width changes */
+}

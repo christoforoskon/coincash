@@ -1,0 +1,66 @@
+.headerContainer {
+  background: var(--color-light-gradient);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.upperText {
+  max-width: 312px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.upperText h1 {
+  text-align: left;
+}
+
+.bottomText {
+  background-color: var(--color-primary);
+  padding: 35px;
+  position: relative;
+  z-index: 99;
+}
+
+.bottomText p {
+  color: var(--color-white);
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.images {
+  height: 100%;
+  width: 100%;
+}
+.images .frameImg {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 377px;
+  margin: 0 auto;
+}
+
+.images .iphoneImg {
+  position: absolute;
+  z-index: 9;
+  bottom: 103px;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .upperText {
+    max-width: 542px;
+    margin: 0 auto;
+  }
+}
