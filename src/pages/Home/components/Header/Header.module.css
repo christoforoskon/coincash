@@ -5,7 +5,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 109px;
 }
 
 .upperText {
@@ -36,31 +36,66 @@
 .images {
   height: 100%;
   width: 100%;
+  position: relative;
+  bottom: -7px;
 }
+
 .images .frameImg {
   position: relative;
   z-index: 1;
   height: 100%;
-  width: 377px;
+  width: 100%;
+  max-width: 377px;
   margin: 0 auto;
 }
 
 .images .iphoneImg {
   position: absolute;
   z-index: 9;
-  bottom: 103px;
-  right: 0;
+  max-width: 125px;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-@media (min-width: 768px) {
+.btn2 {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .headerContainer {
+    padding-top: 133px;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    margin-top: 144px;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 50px;
   }
 
   .upperText {
     max-width: 542px;
     margin: 0 auto;
+    margin-bottom: 205px;
+  }
+
+  .images .frameImg {
+    width: 100%;
+    max-width: 687px;
+  }
+
+  .images .iphoneImg {
+    max-width: 40%;
+  }
+
+  .btn1 {
+    display: none;
+  }
+  .btn2 {
+    display: block;
   }
 }

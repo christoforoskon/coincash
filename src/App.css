@@ -1,5 +1,4 @@
 #root {
-  /* max-width: 1440px; */
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -76,8 +75,9 @@ h2 {
 }
 
 button {
+  cursor: pointer;
   padding: 12px 24px;
-  background-color: var(--color-dark-primary);
+  background-color: var(--color-primary);
   border-radius: 4px;
   gap: 8px;
 
@@ -91,6 +91,13 @@ button {
 
   border: none;
   width: fit-content;
+}
+
+button:hover {
+  background-color: var(--color-dark-primary);
+}
+button:disabled {
+  background-color: var(--color-dark-primary);
 }
 
 @media (min-width: 764px) {

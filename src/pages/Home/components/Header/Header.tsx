@@ -14,7 +14,8 @@ const Header = () => {
           <p className="body2">
             The easiest way to use your cryptocurrencies for everyday purchases.
           </p>
-          <button>Get the app</button>
+          <button className={styles.btn1}>Get the app</button>
+          <button className={styles.btn2}>Download now for free</button>
         </div>
         <div className={styles.images}>
           <img src={frame} alt="frame" className={styles.frameImg} />

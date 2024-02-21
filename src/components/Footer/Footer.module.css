@@ -100,4 +100,8 @@ button p {
   .subFooter .links {
     flex-direction: row;
   }
+
+  .inputContainer {
+    margin-bottom: 136px;
+  }
 }

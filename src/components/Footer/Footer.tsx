@@ -20,7 +20,7 @@ const Footer = () => {
           <input
             type="email"
             placeholder="Type your email here"
-            className={styles.inputField}
+            className={`${styles.inputField} body2`}
           />
           <button className={styles.signUp} onClick={handleSendClick}>
             <p className="label1">Sing up</p>
